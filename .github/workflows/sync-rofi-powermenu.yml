@@ -5,7 +5,8 @@ on:
     - cron: "0 3 * * *"  # se ejecuta cada día a las 03:00 UTC
   workflow_dispatch:      # permite lanzarlo manualmente
 
-
+permissions:
+  contents: write
 
 jobs:
   sync:
