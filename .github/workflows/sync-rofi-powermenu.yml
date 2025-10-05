@@ -1,0 +1,30 @@
+name: Sync rofi-power-menu
+
+on:
+  schedule:
+    - cron: "0 3 * * *"  # se ejecuta cada día a las 03:00 UTC
+  workflow_dispatch:      # permite lanzarlo manualmente
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Descargar rofi-power-menu
+        run: |
+          mkdir -p rofi
+          curl -L https://raw.githubusercontent.com/jluttine/rofi-power-menu/refs/heads/master/rofi-power-menu >
+          chmod +x rofi/rofi-power-menu
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add rofi/rofi-power-menu
+          git diff --cached --quiet || git commit -m "Auto-sync: update rofi-power-menu from upstream"
+          git push
