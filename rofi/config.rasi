@@ -1,0 +1,18 @@
+
+@theme "/home/alvaro/.local/share/rofi/themes/deathemonic/style.rasi"
+
+//@theme "/usr/share/rofi/themes/fancy.rasi"
+
+//@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
+
+//@theme "/usr/share/rofi/themes/paper-float.rasi"
+
+/*
+configuration {
+	display-drun: "Applicaciones:";
+	display-window: "Ventanas";
+	show-icons: true;
+	drun-display-format: "{icon} {name}";
+}
+
+*/
