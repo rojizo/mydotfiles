@@ -21,15 +21,15 @@
         "pulseaudio#microphone"
     ],
 
-    "hyprland/window": {
-        "format": "󰣇 {}"
-    },
-    
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate"
-        //"format": "{icon}",
+        "all-outputs": false,
+        "on-click": "activate",
+        "format": "{icon}",
+    "format-icons": {
+        "1": "",
+        "11": "",
+    }
     },
 
     "tray": {
