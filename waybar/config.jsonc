@@ -23,12 +23,31 @@
 
     "hyprland/workspaces": {
         "disable-scroll": true,
+	"show-special": true,
         "all-outputs": false,
         "on-click": "activate",
         "format": "{icon}",
     "format-icons": {
-        "1": "",
-        "11": "",
+  "1": "1\u2081",
+  "2": "2\u2081",
+  "3": "3\u2081",
+  "4": "4\u2081",
+  "5": "5\u2081",
+  "6": "6\u2081",
+  "7": "7\u2081",
+  "8": "8\u2081",
+  "9": "9\u2081",
+  "10": "0\u2081",
+  "11": "1\u2082",
+  "12": "2\u2082",
+  "13": "3\u2082",
+  "14": "4\u2082",
+  "15": "5\u2082",
+  "16": "6\u2082",
+  "17": "7\u2082",
+  "18": "8\u2082",
+  "19": "9\u2082",
+  "20": "0\u2082"
     }
     },
 
@@ -67,6 +86,21 @@
         "on-scroll-down": "brightnessctl set 1%-",
         "min-length": 6
     },
+
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        // "format": "󰂯 {status}",
+        // format-* handles every state, so default format is not necessary.
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "󰂱 {num_connections}",
+        // "tooltip-format": "{controller_alias}\t{controller_address}",
+        // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
 
     "battery": {
         "states": {

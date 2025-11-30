@@ -12,20 +12,32 @@ window#waybar {
     color: #cdd6f4;
 }
 
+#workspace button.active {
+    border: 2px solid red;
+}
+
 #workspaces button {
     padding: 5px;
-    color: #555869;
+/*    color: #555869;*/
+    color: #a6adc8;
     margin-right: 5px;
 }
 
+#workspaces button.visible {
+    color: #ffadc8;
+}
+
 #workspaces button.active {
-    color: #a6adc8;
+    color: #a6ffc8;
 }
 
 #workspaces button.focused {
     color: #a6adc8;
     background: #eba0ac;
     border-radius: 10px;
+}
+
+#workspaces button.empty {
 }
 
 #workspaces button.urgent {
