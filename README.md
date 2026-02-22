@@ -74,7 +74,9 @@ sudo pacman -S qt5ct kvantum pamixer
 
 ### Configuración del teclado externo XD87 (kanata)
 
-niri no soporta layouts distintos por dispositivo ([issue #705](https://github.com/YaLTeR/niri/issues/705)). **kanata** resuelve este problema: intercepta exclusivamente el XD87 y reescribe sus scancodes antes de que niri los procese. El resultado es que, bajo el layout global `es`, el XD87 produce los caracteres de US International.
+niri **no soporta todavía** configurar dispositivos de entrada de forma individual — esta función está planificada y se sigue en [niri-wm/niri #371](https://github.com/niri-wm/niri/issues/371). No hay ninguna sintaxis de `keyboard "nombre" { ... }` válida en niri a fecha de hoy; el bloque `keyboard {}` del `input {}` se aplica a todos los teclados a la vez.
+
+**kanata** resuelve el problema sin esperar a esa función: intercepta exclusivamente el XD87 y reescribe sus scancodes antes de que niri los procese. El resultado es que, bajo el layout global `es`, el XD87 produce los caracteres de US International.
 
 **Pasos para activarlo:**
 
