@@ -57,11 +57,13 @@ window#waybar {
 #battery,
 #pulseaudio,
 #network,
+#bluetooth,
 #cpu,
 #memory,
 #workspaces,
 #tray,
-#backlight {
+#backlight,
+#custom-power {
     background: #1e1e2e;
     padding: 0px 10px;
     margin: 3px 0px;
@@ -111,7 +113,10 @@ window#waybar {
 #network {
     color:  #a6adc8;
     border-radius: 10px 0px 0px 10px;
+}
 
+#bluetooth {
+    color: #a6adc8;
 }
 
 #pulseaudio {
@@ -132,4 +137,11 @@ window#waybar {
     color:#a6adc8;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
+}
+
+#custom-power {
+    color: #a6adc8;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
