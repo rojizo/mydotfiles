@@ -57,6 +57,9 @@ sudo pacman -S niri xdg-desktop-portal-gnome
 # Herramientas que reemplazan a las de hyprland
 sudo pacman -S swaylock swayidle swaybg fuzzel
 
+# Remapeo de teclado por dispositivo
+sudo pacman -S kanata
+
 # Ya instalados / sin cambios
 sudo pacman -S foot waybar swaync cliphist wl-clipboard \
                wlogout playerctl brightnessctl \
@@ -69,7 +72,26 @@ sudo pacman -S ttf-meslo-nerd
 sudo pacman -S qt5ct kvantum pamixer
 ```
 
-> **Nota sobre el teclado externo:** niri aún no tiene soporte por dispositivo para layouts de teclado ([issue #705](https://github.com/YaLTeR/niri/issues/705)). Si usas el kprepublic XD87 (us/intl) junto con el teclado integrado (es), por ahora la solución más práctica es crear dos configuraciones de niri con distinto layout xkb y alternar entre ellas, o usar un único layout compatible para ambos teclados.
+### Configuración del teclado externo XD87 (kanata)
+
+niri no soporta layouts distintos por dispositivo ([issue #705](https://github.com/YaLTeR/niri/issues/705)). **kanata** resuelve este problema: intercepta exclusivamente el XD87 y reescribe sus scancodes antes de que niri los procese. El resultado es que, bajo el layout global `es`, el XD87 produce los caracteres de US International.
+
+**Pasos para activarlo:**
+
+```bash
+# 1. Añadir tu usuario al grupo input
+sudo usermod -aG input $USER
+# Cierra sesión y vuelve a entrar para que tenga efecto
+
+# 2. Encontrar el path del XD87
+ls /dev/input/by-id/ | grep -i kprepublic
+# Ejemplo: usb-KPRepublic_XD87-event-kbd
+
+# 3. Editar kanata/xd87.kbd y ajustar linux-dev con el path encontrado
+# (la línea linux-dev al principio del archivo)
+```
+
+kanata ya está configurado para iniciarse automáticamente con niri. El archivo `kanata/xd87.kbd` contiene la tabla completa de remapeos con la explicación de cada tecla.
 
 ---
 

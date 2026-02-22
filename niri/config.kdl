@@ -35,11 +35,9 @@ input {
     }
 
     // Teclado externo (kprepublic XD87 - US international)
-    // NOTA: niri no soporta layout distinto por dispositivo todavía.
-    // Si necesitas us/intl para el teclado externo, cambia el layout global
-    // a "us" con variant "intl" cuando lo conectes, o crea un segundo perfil
-    // de niri con ese layout. Sigue el issue:
-    // https://github.com/YaLTeR/niri/issues/705
+    // Kanata intercepta el XD87 y remapea sus teclas para que,
+    // bajo este layout "es", se obtengan los caracteres de US International.
+    // Ver ~/.config/kanata/xd87.kbd para la configuración completa.
 
     touchpad {
         tap
@@ -158,6 +156,10 @@ spawn-at-startup "sh" "-c" "~/.config/niri/scripts/idle.sh"
 // Portapapeles
 spawn-at-startup "wl-paste" "-t" "text"  "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "-t" "image" "--watch" "cliphist" "store"
+
+// Remapeo del teclado externo XD87 (kanata)
+// Requiere: sudo usermod -aG input $USER  (y cerrar sesión)
+spawn-at-startup "kanata" "--cfg" "/home/alvaro/.config/kanata/xd87.kbd"
 
 // ─────────────────────────────────────────────────────
 // REGLAS DE VENTANAS
