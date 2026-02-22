@@ -192,7 +192,7 @@ window-rule {
 //   Mod+V            → Historial del portapapeles
 //   Mod+N            → Panel de notificaciones
 //   Mod+1-9          → Ir a workspace
-//   Mod+Shift+1-9    → Mover ventana a workspace
+//   Mod+Ctrl+1-9     → Mover ventana a workspace
 //   Mod+TAB          → Workspace siguiente
 //   Mod+Alt+TAB      → Monitor siguiente
 //   Mod+Shift+F      → Pantalla completa
