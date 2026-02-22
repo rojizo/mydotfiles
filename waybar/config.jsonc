@@ -7,7 +7,7 @@
     "gtk-layer-shell": true,
     "height": 0,
     "modules-left": [
-        "niri/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": ["clock"],
     "modules-right": [
@@ -21,13 +21,34 @@
         "pulseaudio#microphone"
     ],
 
-    "niri/workspaces": {
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+	"show-special": true,
+        "all-outputs": false,
         "on-click": "activate",
         "format": "{icon}",
-        "format-icons": {
-            "active":  "⬤",
-            "default": "○"
-        }
+    "format-icons": {
+  "1": "1\u2081",
+  "2": "2\u2081",
+  "3": "3\u2081",
+  "4": "4\u2081",
+  "5": "5\u2081",
+  "6": "6\u2081",
+  "7": "7\u2081",
+  "8": "8\u2081",
+  "9": "9\u2081",
+  "10": "0\u2081",
+  "11": "1\u2082",
+  "12": "2\u2082",
+  "13": "3\u2082",
+  "14": "4\u2082",
+  "15": "5\u2082",
+  "16": "6\u2082",
+  "17": "7\u2082",
+  "18": "8\u2082",
+  "19": "9\u2082",
+  "20": "0\u2082"
+    }
     },
 
     "tray": {
