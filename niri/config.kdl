@@ -161,6 +161,21 @@ spawn-at-startup "wl-paste" "-t" "image" "--watch" "cliphist" "store"
 
 // Remapeo del teclado externo XD87 (kanata)
 // Requiere: sudo usermod -aG input $USER  (y cerrar sesión)
+//
+// ⚠️  IMPORTANTE: el teclado INTEGRADO del portátil NO es interceptado
+//    por kanata. Aunque el mapeo del XD87 sea incorrecto, siempre podrás
+//    escribir con el teclado del portátil para corregir el config.
+//
+// Para desactivar kanata sin reiniciar niri:
+//   Super+Alt+K   →  mata kanata (el XD87 queda con layout "es" directo)
+//   Super+Alt+K de nuevo (o reconnectar el XD87) no lo reactiva; para eso
+//   usa Super+Alt+Shift+K o comenta la línea spawn-at-startup y recarga
+//   la config con:  niri msg action reload-config
+//
+// Si en el futuro cambias a un teclado personalizado distinto al XD87,
+// crea un nuevo fichero en kanata/ para ese dispositivo y ajusta esta línea.
+// Cuando niri implemente soporte nativo por dispositivo (issue #371),
+// bastará con borrar el spawn-at-startup y añadir el bloque keyboard en input{}.
 spawn-at-startup "kanata" "--cfg" "/home/alvaro/.config/kanata/xd87.kbd"
 
 // ─────────────────────────────────────────────────────
@@ -233,6 +248,13 @@ binds {
 
     // Panel de notificaciones (swaync)
     Mod+N { spawn "swaync-client" "-t"; }
+
+    // ── Teclado externo (kanata) ──────────────────────────
+    // Si el XD87 teclea caracteres raros, mata kanata en caliente.
+    // El portátil sigue funcionando siempre (kanata no lo toca).
+    Mod+Alt+K       { spawn "pkill" "kanata"; }
+    // Para reiniciar kanata después:
+    Mod+Alt+Shift+K { spawn "kanata" "--cfg" "/home/alvaro/.config/kanata/xd87.kbd"; }
 
     // Captura de pantalla
     Print           { screenshot; }

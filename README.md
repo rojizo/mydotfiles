@@ -30,6 +30,8 @@ Dotfiles para **Hyprland** (rama `main`) y **niri** (rama `niri`).
 | `Super+Shift+1…9` | Mover columna al workspace N |
 | `Super+Tab` | Foco al siguiente monitor |
 | `Print` | Captura de pantalla |
+| `Super+Alt+K` | **Matar kanata** (XD87 queda con layout `es` directo) |
+| `Super+Alt+Shift+K` | Reiniciar kanata |
 
 > **Tip – terminales en vertical:** Abre dos instancias de `foot`, asegúrate de que están en columnas separadas, sitúate en la segunda y pulsa `Super+,`. Las dos terminales quedarán apiladas en la misma columna.
 
