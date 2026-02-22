@@ -15,12 +15,10 @@
         "memory",
         "cpu",
         "network",
-        "bluetooth",
         "battery",
         "backlight",
         "pulseaudio",
-        "pulseaudio#microphone",
-        "custom/power"
+        "pulseaudio#microphone"
     ],
 
     "niri/workspaces": {
@@ -69,13 +67,17 @@
     },
 
     "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        // "format": "󰂯 {status}",
+        // format-* handles every state, so default format is not necessary.
         "format-on": "󰂯",
         "format-off": "󰂲",
-        "format-disabled": "",
+        "format-disabled": "", // an empty format will hide the module
         "format-connected": "󰂱 {num_connections}",
+        // "tooltip-format": "{controller_alias}\t{controller_address}",
+        // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "$HOME/.config/waybar/scripts/bluetooth-menu.sh"
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
 
 
@@ -99,7 +101,7 @@
         "on-click-right": "pamixer -t",
         "on-scroll-up": "pamixer -i 1",
         "on-scroll-down": "pamixer -d 1",
-        "on-click": "$HOME/.config/waybar/scripts/volume-menu.sh",
+        "on-click": "pavucontrol",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
@@ -148,7 +150,6 @@
 
     "network": {
         "tooltip": true,
-        "on-click": "$HOME/.config/waybar/scripts/network-menu.sh",
         "format-wifi": "  {essid}",
         "format-ethernet": "󰈀 ",
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
@@ -157,11 +158,5 @@
         "tooltip-format-disconnected": "Disconnected",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2
-    },
-
-    "custom/power": {
-        "format": "⏻",
-        "on-click": "wlogout",
-        "tooltip": false
     }
 }
