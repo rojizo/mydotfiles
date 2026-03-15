@@ -1,0 +1,19 @@
+
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+window-rule {
+    // This regular expression is intentionally made as >
+    // since this is the default config, and we want no >
+    // You can get away with just app-id="wezterm" if yo>
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+
+window-rule {
+    match app-id="firefox"
+    match app-id="brave-browser"
+    match app-id="microsoft-edge"
+
+    open-maximized true
+}
