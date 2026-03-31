@@ -3,6 +3,7 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
+
 config-notification {
     disable-failed
 }
@@ -231,5 +232,6 @@ include "dms/cursor.kdl"
 include "dms/windowrules.kdl"
 
 include "includes/colors_layout.kdl"
+//include "includes/bindings.kdl"
 include "includes/windows.kdl"
-
+include "includes/gpu.kdl"
