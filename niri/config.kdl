@@ -74,7 +74,8 @@ input {
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
-    // warp-mouse-to-focus
+    warp-mouse-to-focus
+    focus-follows-mouse
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
@@ -122,6 +123,8 @@ overview {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 environment {
   XDG_CURRENT_DESKTOP "niri"
+  QT_QPA_PLATFORMTHEME "gtk3"
+  QT_QPA_PLATFORMTHEME_QT6 "gtk3"
 }
 hotkey-overlay {
     skip-at-startup
