@@ -30,7 +30,7 @@ input {
     keyboard {
         xkb {
             layout "es, us"
-            variant ",intl"
+            variant ",altgr-intl"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
