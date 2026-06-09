@@ -1,6 +1,6 @@
 # mydotfiles
 
-Dotfiles para **Hyprland** (rama `main`) y **niri** (rama `niri`).
+Ya no hay hyprland **niri** (rama `master`).
 
 ## Niri
 
@@ -98,13 +98,3 @@ ls /dev/input/by-id/ | grep -i kprepublic
 kanata ya está configurado para iniciarse automáticamente con niri. El archivo `kanata/xd87.kbd` contiene la tabla completa de remapeos con la explicación de cada tecla.
 
 ---
-
-## Hyprland
-
-Just some copy and paste from around the web.
-
-I have used lots of info from [Simple Hyprland](https://github.com/gaurav23b/simple-hyprland/tree/main)
-
-### Used packages
-
-hyprland hyprpaper cliphist waybar rofi
