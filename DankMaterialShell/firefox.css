@@ -4,7 +4,7 @@
     --md-sys-color-surface-tint: #5455a9;
     --md-sys-color-on-primary: #ffffff;
     --md-sys-color-primary-container: #e1dfff;
-    --md-sys-color-on-primary-container: #0b0664;
+    --md-sys-color-on-primary-container: #0c0664;
     --md-sys-color-secondary: #5d5c72;
     --md-sys-color-on-secondary: #ffffff;
     --md-sys-color-secondary-container: #e2e0f9;
@@ -12,7 +12,7 @@
     --md-sys-color-tertiary: #795369;
     --md-sys-color-on-tertiary: #ffffff;
     --md-sys-color-tertiary-container: #ffd8ec;
-    --md-sys-color-on-tertiary-container: #2e1125;
+    --md-sys-color-on-tertiary-container: #2e1124;
     --md-sys-color-error: #ba1a1a;
     --md-sys-color-on-error: #ffffff;
     --md-sys-color-error-container: #ffdad6;
@@ -31,7 +31,7 @@
     --md-sys-color-inverse-on-surface: #f1f1f1;
     --md-sys-color-inverse-primary: #c1c1ff;
     --md-sys-color-primary-fixed: #e1dfff;
-    --md-sys-color-on-primary-fixed: #0b0664;
+    --md-sys-color-on-primary-fixed: #0c0664;
     --md-sys-color-primary-fixed-dim: #c1c1ff;
     --md-sys-color-on-primary-fixed-variant: #3c3d8f;
     --md-sys-color-secondary-fixed: #e2e0f9;
@@ -39,7 +39,7 @@
     --md-sys-color-secondary-fixed-dim: #c6c4dd;
     --md-sys-color-on-secondary-fixed-variant: #454559;
     --md-sys-color-tertiary-fixed: #ffd8ec;
-    --md-sys-color-on-tertiary-fixed: #2e1125;
+    --md-sys-color-on-tertiary-fixed: #2e1124;
     --md-sys-color-tertiary-fixed-dim: #e9b9d3;
     --md-sys-color-on-tertiary-fixed-variant: #5f3c51;
     --md-sys-color-surface-dim: #dadada;
@@ -99,7 +99,7 @@
     --md-sys-color-inverse-on-surface: #303030;
     --md-sys-color-inverse-primary: #5455a9;
     --md-sys-color-primary-fixed: #e1dfff;
-    --md-sys-color-on-primary-fixed: #0b0664;
+    --md-sys-color-on-primary-fixed: #0c0664;
     --md-sys-color-primary-fixed-dim: #c1c1ff;
     --md-sys-color-on-primary-fixed-variant: #3c3d8f;
     --md-sys-color-secondary-fixed: #e2e0f9;
@@ -107,7 +107,7 @@
     --md-sys-color-secondary-fixed-dim: #c6c4dd;
     --md-sys-color-on-secondary-fixed-variant: #454559;
     --md-sys-color-tertiary-fixed: #ffd8ec;
-    --md-sys-color-on-tertiary-fixed: #2e1125;
+    --md-sys-color-on-tertiary-fixed: #2e1124;
     --md-sys-color-tertiary-fixed-dim: #e9b9d3;
     --md-sys-color-on-tertiary-fixed-variant: #5f3c51;
     --md-sys-color-surface-dim: #131313;
