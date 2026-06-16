@@ -413,7 +413,22 @@
     ]
   },
   "showOnLastDisplay": {},
-  "niriOutputSettings": {},
+  "niriOutputSettings": {
+    "Philips Consumer Electronics Company PHL 243V5 ZV01929000590": {
+      "vrrOnDemand": true,
+      "focusAtStartup": false,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
+    },
+    "HP Inc. HP E27q G5 CNC3360HSH": {
+      "vrrOnDemand": true,
+      "focusAtStartup": false,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
+    }
+  },
   "hyprlandOutputSettings": {},
   "displayProfiles": {
     "niri": {
@@ -426,15 +441,25 @@
         ],
         "createdAt": 1774890928288,
         "updatedAt": 1774890928288
+      },
+      "profile_1781613262682_jrrcgk": {
+        "id": "profile_1781613262682_jrrcgk",
+        "name": "pc-despacho",
+        "outputSet": [
+          "HP Inc. HP E27q G5 CNC3360HSH",
+          "Philips Consumer Electronics Company PHL 243V5 ZV01929000590"
+        ],
+        "createdAt": 1781613262682,
+        "updatedAt": 1781613262682
       }
     }
   },
   "activeDisplayProfile": {
-    "niri": "profile_1774890928288_bpl7vs"
+    "niri": "profile_1781613262682_jrrcgk"
   },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
-  "displaySnapToEdge": false,
+  "displaySnapToEdge": true,
   "barConfigs": [
     {
       "id": "default",
