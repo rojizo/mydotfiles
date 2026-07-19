@@ -1,3 +1,0 @@
-debug {
-  render-drm-device "/dev/dri/by-gpu/nvidia"
-}

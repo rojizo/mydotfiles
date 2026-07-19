@@ -62,15 +62,8 @@ input {
         // scroll-method "no-scroll"
     }
 
-    trackpoint {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // scroll-button-lock
-        // middle-emulation
+    tablet {
+        map-to-output "DP-2"
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.

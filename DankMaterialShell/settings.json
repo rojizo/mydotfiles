@@ -50,7 +50,7 @@
   "firstDayOfWeek": -1,
   "showWeekNumber": false,
   "calendarBackend": "auto",
-  "use24HourClock": true,
+  "clockFormat": "24h",
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
@@ -218,6 +218,7 @@
   "scrollTitleEnabled": true,
   "mediaAdaptiveWidthEnabled": true,
   "audioVisualizerEnabled": true,
+  "mediaUseAlbumArtAccent": false,
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
@@ -254,12 +255,10 @@
   "greeterEnableFprint": false,
   "greeterEnableU2f": false,
   "greeterWallpaperPath": "",
-  "greeterUse24HourClock": true,
-  "greeterShowSeconds": false,
-  "greeterPadHours12Hour": false,
   "greeterLockDateFormat": "",
   "greeterFontFamily": "",
   "greeterWallpaperFillMode": "",
+  "greeterPamExternallyManaged": false,
   "greeterSyncPending": true,
   "greeterSyncBaseline": {},
   "mediaSize": 1,
@@ -281,6 +280,7 @@
     "apps": "list"
   },
   "niriOverviewOverlayEnabled": false,
+  "niriOverviewLauncherStyle": "full",
   "dankLauncherV2Size": "medium",
   "dankLauncherV2ShowSourceBadges": true,
   "dankLauncherV2BorderEnabled": true,
@@ -497,6 +497,9 @@
   "maxFprintTries": 15,
   "enableU2f": false,
   "u2fMode": "or",
+  "lockPamPath": "",
+  "lockPamInlineFprint": false,
+  "lockPamInlineU2f": false,
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "lockScreenVideoEnabled": false,
@@ -560,6 +563,7 @@
   "updaterIntervalSeconds": 1800,
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
+  "updaterIgnoredPackages": [],
   "displayNameMode": "model",
   "screenPreferences": {
     "wallpaper": [
@@ -581,12 +585,24 @@
       "layout": {
         "alwaysCenterSingleColumn": true
       }
+    },
+    "BOE 0x084D Unknown": {
+      "focusAtStartup": false,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
+    },
+    "LG Electronics LG HDR 4K 0x0000EB28": {
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      },
+      "focusAtStartup": true
     }
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
   "activeDisplayProfile": {
-    "niri": "profile_1781613262682_jrrcgk"
+    "niri": "profile_1784486650816_rskgkoc"
   },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
