@@ -18,3 +18,19 @@ window-rule {
     match app-id="^brave-browser$"
     open-maximized true
 }
+
+// @id=wr_1785328087222598618 @name=org.keepassxc.KeePassXC
+window-rule {
+    match app-id="^org.keepassxc.KeePassXC$" is-floating=true
+}
+
+// @id=wr_1785328101799165827 @name=org.keepassxc.KeePassXC
+window-rule {
+    match app-id="^org.keepassxc.KeePassXC$" is-floating=true
+}
+
+// @id=wr_1785406378336481625 @name=jetbrains-clion
+window-rule {
+    match app-id="^jetbrains-clion$"
+    open-maximized true
+}
