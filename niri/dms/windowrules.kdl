@@ -34,3 +34,14 @@ window-rule {
     match app-id="^jetbrains-clion$"
     open-maximized true
 }
+
+// @id=wr_1787584573192692407 @name=org.gnome.World.PikaBackup
+window-rule {
+    match app-id="^org.gnome.World.PikaBackup$" is-floating=true
+}
+
+// @id=wr_1788212810598273587 @name=org.gnome.NautilusPreviewer
+window-rule {
+    match app-id="^org.gnome.NautilusPreviewer$"
+    open-floating true
+}
