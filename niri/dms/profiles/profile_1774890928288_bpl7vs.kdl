@@ -3,17 +3,30 @@
 output "BOE 0x084D Unknown" {
     mode "1920x1080@143.999"
     scale 1
-    position x=0 y=0
-    layout {
-        always-center-single-column
-    }
+    position x=0 y=367
 }
 
 output "LG Electronics LG HDR 4K 0x0000EB28" {
     mode "3840x2160@59.996"
     scale 1.5
-    position x=1920 y=0
-    focus-at-startup
+    position x=1901 y=360
+}
+
+output "Philips Consumer Electronics Company PHL 243V5 ZV01929000590" {
+    mode "1920x1080@60.000"
+    scale 1
+    position x=2560 y=360
+    variable-refresh-rate on-demand=true
+    layout {
+        always-center-single-column
+    }
+}
+
+output "HP Inc. HP E27q G5 CNC3360HSH" {
+    mode "2560x1440@59.951"
+    scale 1
+    position x=4480 y=0
+    variable-refresh-rate on-demand=true
     layout {
         always-center-single-column
     }

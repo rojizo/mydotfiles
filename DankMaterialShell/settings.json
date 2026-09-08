@@ -35,6 +35,10 @@
   "appsDockEnlargeOnHover": true,
   "appIdSubstitutions": [],
   "greeterAutoLogin": true,
+<<<<<<< HEAD
+=======
+  "greeterPamExternallyManaged": true,
+>>>>>>> dfb264ca29c7bd82a2e436d359db2358f4b89407
   "spotlightSectionViewModes": {
     "apps": "list"
   },
@@ -303,6 +307,7 @@
       "trigger": "cb"
     }
   },
+<<<<<<< HEAD
   "clipboardVisibleEntryActions": [
     "pin",
     "edit",
@@ -310,6 +315,8 @@
     "copy",
     "paste"
   ],
+=======
+>>>>>>> dfb264ca29c7bd82a2e436d359db2358f4b89407
   "launcherPluginVisibility": {
     "dms_settings_search": {
       "allowWithoutTrigger": true
