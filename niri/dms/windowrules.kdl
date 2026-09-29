@@ -51,3 +51,14 @@ window-rule {
     match app-id="^com.danklinux.dms$"
     open-floating true
 }
+
+// @id=wr_1789404261869106236 @name=org.keepassxc.KeePassXC
+window-rule {
+    match app-id="^org.keepassxc.KeePassXC$" title="^KeePassXC - Solicitud de acceso al navegador$"
+    open-floating true
+}
+
+// @id=wr_1790280100941235412 @name=soffice
+window-rule {
+    match app-id="^soffice$" title="^Abrir$" is-floating=true
+}

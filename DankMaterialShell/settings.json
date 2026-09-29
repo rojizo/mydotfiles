@@ -93,6 +93,7 @@
   "osdMediaPlaybackEnabled": true,
   "osdBrightnessEnabled": false,
   "osdPowerProfileEnabled": true,
+  "updaterAllowAUR": false,
   "displayNameMode": "model",
   "screenPreferences": {
     "wallpaper": [
@@ -266,7 +267,8 @@
       "shadowColorMode": "text",
       "shadowCustomColor": "#000000",
       "clickThrough": true,
-      "attachToScreenEdge": false
+      "attachToScreenEdge": false,
+      "island": false
     }
   ],
   "desktopClockCustomColor": {
