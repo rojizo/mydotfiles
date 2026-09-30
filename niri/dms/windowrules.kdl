@@ -60,5 +60,11 @@ window-rule {
 
 // @id=wr_1790280100941235412 @name=soffice
 window-rule {
-    match app-id="^soffice$" title="^Abrir$" is-floating=true
+    match app-id="^soffice$" title="^Abrir$" 
+    open-floating true
+}
+
+window-rule {
+    match app-id="^KeePassXC$" title="^Desbloquear base de datos - KeePassXC$"
+    open-floating true
 }
