@@ -77,6 +77,18 @@ window-rule {
     match app-id="^org.gnome.Nautilus$"
 }
 
+// @id=wr_1793190654244996442 @name=org.keepassxc.KeePassXC
+window-rule {
+    match app-id="^org.keepassxc.KeePassXC$" title="^Desbloquear base de datos - KeePassXC$"
+    open-floating true
+}
+
+// @id=wr_1793191239245544413 @name=brave-browser
+window-rule {
+    match app-id="^brave-browser$" title="^Imagen en imagen$"
+    open-floating true
+}
+
 // @id=dms-window-opaque @name=DMS Window Opaque
 window-rule {
     match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"

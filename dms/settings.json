@@ -56,8 +56,8 @@
       "cursorHideTimeout": 0
     }
   },
-  "fontFamily": "Google Sans Flex",
-  "fontScale": 1,
+  "fontFamily": "Adwaita Sans",
+  "fontScale": 1.1,
   "acMonitorTimeout": 180,
   "acLockTimeout": 120,
   "acSuspendTimeout": 1800,
@@ -293,10 +293,13 @@
   "launcherPluginVisibility": {
     "dms_settings_search": {
       "allowWithoutTrigger": true
+    },
+    "calculator": {
+      "allowWithoutTrigger": true
     }
   },
   "configVersion": 42,
-  "radiusStrength": 13,
+  "radiusStrength": 22,
   "dockConfigs": [
     {
       "id": "dock",
@@ -308,11 +311,12 @@
       "showOnLastDisplay": true,
       "position": 1,
       "mode": "compact",
+      "middleClickAction": "close",
       "taskbarAlign": "center",
       "widgetExpansion": "popout",
       "iconSize": 40,
-      "spacing": 4,
-      "itemSpacing": 4,
+      "spacing": 8,
+      "itemSpacing": 8,
       "margin": 0,
       "bottomGap": 0,
       "transparency": 1,
@@ -373,5 +377,17 @@
     "niri"
   ],
   "springBounce": 1,
-  "textRenderType": 0
+  "textRenderType": 0,
+  "matugenSourceMode": "value",
+  "matugenSpec": "2021",
+  "matugenSeedColor": "",
+  "monoFontFamily": "Fira Code",
+  "displayFontFamily": "DM Serif Display",
+  "spotlightBarShowModeChips": false,
+  "osdKeyboardLayoutEnabled": false,
+  "osdWorkspaceEnabled": false,
+  "osdCapsLockEnabled": true,
+  "density": "comfortable",
+  "radiusMode": "scale",
+  "fixedRadius": 8
 }
