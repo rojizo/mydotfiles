@@ -3,5 +3,12 @@
     "enabled": true,
     "trigger": "=",
     "calcEngine": "qalc"
+  },
+  "warpToggle": {
+    "enabled": true
+  },
+  "deviceBatteries": {
+    "enabled": true,
+    "pollSeconds": "300"
   }
 }
