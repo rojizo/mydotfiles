@@ -96,6 +96,29 @@
           }
         }
       }
+    },
+    {
+      "id": "auto_13993072",
+      "name": "",
+      "outputs": {
+        "BOE 0x084D Unknown": {
+          "mode": "1920x1080@143.999",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "scale": 1,
+          "transform": "Normal",
+          "vrr": false,
+          "disabled": false,
+          "niri": {
+            "focusAtStartup": true,
+            "layout": {
+              "alwaysCenterSingleColumn": true
+            }
+          }
+        }
+      }
     }
   ]
 }
