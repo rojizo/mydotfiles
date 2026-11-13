@@ -390,5 +390,7 @@
   "density": "comfortable",
   "radiusMode": "scale",
   "fixedRadius": 8,
-  "displayProfileAutoSelect": true
+  "displayProfileAutoSelect": true,
+  "displaySnapToEdge": true,
+  "displayShowDisconnected": true
 }
